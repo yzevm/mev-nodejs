@@ -1,13 +1,13 @@
 /* eslint-disable max-len */
 import { FlashbotsBundleProvider } from '@flashbots/ethers-provider-bundle';
 
-import { flashbotsUrl, provider, signingWallet, wsProvider } from './src/constants';
-import { Decoder } from './src/stages/Decoder';
-import { Flashbots } from './src/stages/Flashbots';
-import { InitialChecker } from './src/stages/InitialChecker';
-import { Simulator } from './src/stages/Simulator';
-import { TransactionBuilder } from './src/stages/TransactionBuilder';
-import { logger } from './src/utils';
+import { flashbotsUrl, provider, signingWallet, wsProvider } from './constants';
+import { Decoder } from './stages/Decoder';
+import { Flashbots } from './stages/Flashbots';
+import { InitialChecker } from './stages/InitialChecker';
+import { Simulator } from './stages/Simulator';
+import { TransactionBuilder } from './stages/TransactionBuilder';
+import { logger } from './utils';
 
 class App {
   private readonly initialChecker = new InitialChecker();
